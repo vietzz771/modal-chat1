@@ -21,7 +21,6 @@ div {
 	margin: auto;
 	width: 392px;
 	height: 625px;
-	overflow-y: auto;
 	position: relative;
 	border-radius: 3px;
 	box-shadow: rgb(0 0 0 / 10%) 0px 4px 15px 0px,
@@ -72,10 +71,20 @@ div {
 	white-space: pre-line;
 }
 
+.main-content {
+	height: 394px;
+}
+.overflow {
+	overflow-y: auto;
+	position: absolute;
+	bottom: 0;
+	width: 392px;
+	height: 625px;
+}
 .conversation-absolute {
+	border-radius: 3px;
 	width: 340px;
 	margin-top: 167px;
-	background-color: var(--white-color);
 	position: absolute;
 	left: 18px;
 	top: 0;
@@ -83,6 +92,7 @@ div {
 .conversation,
 .another-block,
 .help-block {
+	background-color: var(--white-color);
 	border-radius: 3px;
 	box-shadow: rgb(0 0 0 / 10%) 0px 4px 15px 0px,
 		rgb(0 0 0 / 10%) 0px 1px 2px 0px,
